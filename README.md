@@ -1,6 +1,7 @@
 # ¡Hola! Soy Nicolás 👋
 
-### Bienvenido a este espacio donde guardo y comparto diversos proyectos que voy construyendo diariamente.
+### Estudiante de Ciencia de Datos & Especialista en Supply Chain
+Bienvenido a mi espacio. Acá guardo y comparto los proyectos que voy construyendo día a día, enfocados en resolver problemas complejos de logística, inventario y planificación mediante el uso de datos y desarrollo de software.
 
 ---
 
@@ -8,12 +9,11 @@
 
 | Área | Especialidad |
 | :--- | :--- |
-| **📈 Predictive Forecasting** | Modelos avanzados con **XGBoost, LightGBM y Scikit-Learn** para reducción de sesgo y mejora de precisión. |
-| **⚙️ Optimización Operativa** | Resolución de problemas complejos de Supply Chain mediante programación lineal con **PuLP** y simulación de procesos con **SimPy**. |
-| **📦 Gestión de Inventarios** | Modelado científico: **EOQ, ROP y Stock de Seguridad** con Lead Times dinámicos. Aplicación de **Distribución Gamma**. |
-| **📊 Analytics & Custom Reporting** | Aplicaciones en **R (Shiny)** y reportes dinámicos en **Quarto**, personalizados con **HTML, CSS y componentes de React**. |
-| **🚚 S&OP & Supply Control** | Plan de Suministro (**DRP**), Proyección de Inventarios y Distribución Multiescalón. Gestión **FEFO**. |
-| **🗄️ Data Engineering** | Diseño y gestión de bases de datos **SQL** y manipulación masiva de datos con **Pandas** para garantizar la integridad del flujo. |
+| **📈 Demand Forecasting** | Modelos predictivos con **XGBoost, LightGBM y Scikit-Learn**. Enfoque en la reducción de sesgo y optimización de métricas clave (MAE, BIAS, FVA) para la planificación moderna. |
+| **📦 Gestión de Inventarios** | Cálculo automatizado de KPIs críticos (EOQ, ROP, Stock de Seguridad) para operaciones logísticas, buscando eficiencia y control de quiebres. |
+| **⚙️ Data Engineering & Backend** | Transición de flujos tradicionales (Excel) hacia ecosistemas robustos y escalables. Diseño de bases de datos, manipulación masiva con **Pandas/Polars** y uso de motores analíticos como **DuckDB** y **SQL**. |
+| **🌐 Data Apps & Desarrollo Web** | Evolucionando desde dashboards en Streamlit hacia aplicaciones web full-stack potentes. Uso de **Reflex** para construir interfaces interactivas (React) y backends (**FastAPI**) integrando **REST APIs** y manejo de **JSON** usando Python puro. |
+| **📊 Analytics & Custom Reporting** | Automatización de reportes dinámicos y de alto impacto (PDF/HTML) utilizando el ecosistema de **R Studio** y **Quarto**. |
 
 ---
 
@@ -85,7 +85,7 @@
 ---
 
 ### 🤖 AI-Assisted Engineering & Entorno de Desarrollo
-Mi flujo de trabajo integra modelos de frontera y agentes autónomos para escalar la producción de código, iterar sobre arquitecturas de datos complejas y acelerar el *time-to-market* de mis soluciones.
+Mi flujo de trabajo integra IDEs modernos y herramientas de línea de comandos con agentes autónomos. Esto me permite escalar la producción de código, iterar rápido sobre arquitecturas de datos complejas y acelerar el despliegue de mis proyectos.
 
 ![Cursor](https://img.shields.io/badge/Cursor-AI_IDE-black?style=for-the-badge&logo=visualstudiocode)
 ![Claude Code](https://img.shields.io/badge/Claude_Code-CLI-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
@@ -94,22 +94,8 @@ Mi flujo de trabajo integra modelos de frontera y agentes autónomos para escala
 ![RooCode](https://img.shields.io/badge/RooCode-AI_Coding-2E7D32?style=for-the-badge)
 ![Playwright](https://img.shields.io/badge/Playwright-%232EAD33.svg?style=for-the-badge&logo=playwright&logoColor=white)
 
-* **IDE & Agentes Autónomos:** Desarrollo nativamente en **Cursor**, orquestando agentes como **Cline** y **RooCode** para tareas de refactorización masiva, análisis de bases de código (ej. vectorización de datos en Parquet) y escritura autónoma de scripts.
-* **Diseño de Arquitectura & Debugging:** Apalanco **Claude Code** y **Gemini AI** como *pair-programmers* estratégicos para diseñar sistemas de alta concurrencia, optimizar queries SQL pesadas (cruces entre Oracle/Wareflow) y estructurar pipelines de Machine Learning.
-
----
-
-## 🚀 Proyectos Estratégicos e Ingeniería de Supply Chain
-
-A continuación, destaco las herramientas analíticas y motores de decisión que diseño y mantengo. Mi enfoque no es solo el frontend, sino la arquitectura de datos: **procesamiento paralelo, vectorización de scoring y manejo de cachés en Parquet** para reducir tiempos de consulta en millones de registros.
-
-| Proyecto & Repositorio | Arquitectura & Stack Core | Solución Operativa e Impacto |
-| :--- | :--- | :--- |
-| 📊 **[Benchmarking de Demanda](https://github.com/nicobravo933-Planner/FORECAST_DEPARTAMENTOS)** | `XGBoost`, `LightGBM`, `Streamlit`, `Quarto (Jinja2)` | Motor de forecasting dinámico que evalúa 10 modelos mediante *rolling window*. Automatiza el pipeline de datos, aplica winsorización MAD y genera reportes técnicos reproducibles. |
-| 🚛 **[Analytics de Tráfico & Bandas Horarias](https://github.com/nicobravo933-Planner/TRAFICO_VIAJES)** | `Python`, `Oracle ODBC`, `Streamlit`, `Plotly` | Convierte timestamps granulares de Wareflow en KPIs accionables. Identifica cuellos de botella (Gantt logístico) midiendo tiempos muertos, fricción CD vs Transporte y latencia de carga. |
-| 📦 **[Scoring de Pallets Vectorizado](https://github.com/nicobravo933-Planner/PUNTUACION_PALLETS)** | `Numpy`, `ThreadPoolExecutor`, `Parquet` | Sistema de priorización de despacho. Reduce el escaneo en BD de 3.9M a 200K registros mediante extracción paralela. Scoring vectorizado 50-100x más rápido que iteraciones nativas. |
-| 🗄️ **[Oracle Data Lake Explorer](https://github.com/nicobravo933-Planner/BASE_DATOS_LOGISU)** | `pyodbc nativo`, `Parquet`, `AG-Grid` | Explorador multi-owner de bases de datos operativas. Carga progresiva de +2,888 tablas en menos de 5 segundos eludiendo ORMs tradicionales (SQLAlchemy) para maximizar la performance. |
-| 📉 **[Tracker de Huecos Automático](https://github.com/nicobravo933-Planner/REPORTE_HUECOS)** | `Python`, `Cloudflare Tunnels`, `Streamlit` | Plataforma de consolidación de faltantes en la red de abastecimiento. Integra conexiones remotas seguras, envío automático por WhatsApp y consolidación de reportes TMS. |
+* **IDE & Agentes Autónomos:** Desarrollo nativamente en **Cursor** / **VS Code**, orquestando agentes para un trabajo limpio y ordenado, apoyándome en linters y tipado estricto para asegurar la calidad del código.
+* **Diseño de Arquitectura & Debugging:** Aprovecho el potencial de modelos como **Claude** y **Gemini** para agilizar la resolución de bugs, estructurar migraciones de frameworks y refactorizar lógica de negocio compleja.
 
 ---
 
